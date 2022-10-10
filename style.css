@@ -6,11 +6,14 @@ body {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
     display: inherit;
     grid-template-columns: inherit;
     grid-column: 1/7;
     background-color: #1E407A;
-    height: 150px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 3px solid white;
 }
 
 .headerContent {
@@ -21,7 +24,7 @@ body {
 }
 
 .logo {
-    width: 35%;
+    width: 350px;
 }
 
 .navbar {
@@ -40,9 +43,9 @@ body {
 }
 
 .content {
+    margin-top: 164px;
     display: inherit;
     grid-template-columns: inherit;
-    margin-top: 3px;
     background-color: #1E407A;
     grid-column: 1/7;
     height: 600px;
@@ -84,6 +87,10 @@ body {
     color: white;
 }
 
+.socksText {
+    min-width: 340px;
+}
+
 .socksText a {
     text-decoration: none;
     font-size: 20px;
@@ -114,4 +121,92 @@ body {
     transform-origin: center;
     width: 180px;
     left: 25%
+}
+
+.subContent {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    margin-bottom: 20px;
+}
+
+.contentWrapper2 {
+    display: flex;
+    grid-column: 2/6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sneakerSock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.socksText2 {
+    max-width: 600px;
+}
+
+.socksTitle2 {
+    font-size: 45px;
+    color: #1E407A;
+}
+
+.socksPerk {
+    display: flex;
+    align-items: center;
+}
+
+.socksPerk h3 {
+    color: #1E407A;
+    font-weight: 400;
+}
+
+.socksPerk img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.separator {
+    grid-column: 1/7;
+    height: 3px;
+    background-color: #1E407A;
+}
+
+.resellers {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/6;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.resellers h3 {
+    color: #1E407A;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.resellerImages {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.resellerImages img {
+    width: 200px;
+}
+
+.resellerImages img:nth-child(2) {
+    margin-top: -15px
+}
+
+.resellerImages img:nth-child(3) {
+    margin-top: 20px
+}
+
+.resellerImages img:last-child {
+    width: 120px;
 }
