@@ -1,0 +1,40 @@
+.newsLetter {
+    grid-column: 3/5;
+}
+
+.newscontent {
+    display: inherit;
+    grid-template-columns: inherit;
+    margin-top: 3px;
+    grid-column: 1/7;
+    height: 450px;
+    text-align: center;
+    color: #1E407A;
+}
+
+.newscontent h1 {
+    font-size: 48px;
+}
+
+.newscontent p {
+    font-size: 22px;
+}
+
+#newsInput {
+   border:solid 1px #D5D8DE;
+   width: 380px;
+   line-height: 20px;
+   padding: 15px;
+   vertical-align: middle;
+   border-radius: 12px 0 0 12px;
+}
+
+#newsButton {
+   padding: 17px;
+   color: white;
+   background: #F15B39;
+   vertical-align: middle;
+   border: 1px solid #F15B39;
+   border-radius: 0 12px 12px 0;
+   margin-left: -4px;
+}
