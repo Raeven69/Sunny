@@ -82,3 +82,24 @@ body {
     font-size: 45px;
     color: white;
 }
+
+.socksText a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.orderButton {
+    margin-right: 20px;
+    padding: 0px 20px 0px 20px;
+    background-color: #51B2A2;
+    border: 10px solid #51B2A2;
+    border-radius: 50px;
+    color: #1E407A;
+}
+
+.newsletterButton {
+    padding: 7px 27px 7px 27px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
