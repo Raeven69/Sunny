@@ -40,67 +40,43 @@ body {
 }
 
 .content {
-    display: inherit;
-    grid-template-columns: inherit;
-    margin-top: 3px;
-    background-color: #1E407A;
-    grid-column: 1/7;
-    height: 600px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column: 1/7;
+	margin-top: 3px;
 }
 
-.contentWrapper {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2/6;
+.sockinbox {
+	display: flex;
+	width: 450px;
+	grid-column-start: 2;
+	margin-left: 50px;
 }
 
-.title {
-    margin-top: 25px;
-    text-align: center;
+.info {
+	display: flex;
+	flex-direction: column;
+	grid-column: 3/6;
+	margin-left: 75px;
+	color: #1E407A;
+	margin-top: 10px;
 }
 
-.title h1 {
-    color: white;
-    margin: 0px;
-    font-size: 40px;
+.kopjes {
+	display: flex;
+	font-size: 28px;
 }
 
-.socks {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 }
 
-.socksImages {
-    min-width: 550px;
-}
-
-.socksImg {
-    width: 180px;
-}
-
-.socksTitle {
-    font-size: 45px;
-    color: white;
-}
-
-.socksText a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.orderButton {
-    margin-right: 20px;
-    padding: 0px 20px 0px 20px;
-    background-color: #51B2A2;
-    border: 10px solid #51B2A2;
-    border-radius: 50px;
-    color: #1E407A;
-}
-
-.newsletterButton {
-    padding: 7px 27px 7px 27px;
-    border: 2px solid white;
-    border-radius: 50px;
-    color: white;
+.contact {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin-left: -38px;
+	margin-top: -15px;
 }
