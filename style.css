@@ -2,7 +2,6 @@ body {
     display: grid;
     margin: 0px;
     grid-template-columns: repeat(6, 1fr);
-    font-family: "Nexa", "Comic Sans", "Segeo UI", sans-serif;
 }
 
 .header {

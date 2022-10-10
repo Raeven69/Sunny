@@ -1,11 +1,10 @@
-body {
+body{
     display: grid;
     margin: 0px;
     grid-template-columns: repeat(6, 1fr);
-	background-color: #1E407A
 }
 
-.header {
+.header{
     display: inherit;
     grid-template-columns: inherit;
     grid-column: 1/7;
@@ -13,28 +12,87 @@ body {
     height: 150px;
 }
 
-.headerContent {
+.headerContent{
     display: flex;
     grid-column: 2/6;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo {
+.logo{
     width: 35%;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-evenly;
 }
 
-.navbar li {
+.navbar li{
     list-style: none;
     font-size: 20px;
     color: white;
 }
 
-.navbar li:not(:last-child) {
+.navbar li:not(:last-child){
     margin-right: 50px;
+}
+
+.main{
+    display: inherit;
+    grid-template-columns: inherit;
+    margin-top: 3px;
+    background-color: #1E407A;
+    grid-column: 1/7;
+    height: 600px;
+	
+	
+}
+
+.maincontent{
+	grid-column: 2/6;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.unicolor{
+	display: flex;
+	justify-content: center;
+	
+	background-color: #51B2A2;
+	border: solid;
+	border-width: 10px;
+	border-color: white;
+	border-radius: 50%;
+	padding: 50px 0 50px 0;
+	box-shadow: 0 0 15px 10px #555555;
+}
+
+.stripes{
+	display: flex;
+	justify-content: center;
+	
+	background-color: #51B2A2;
+	border: solid;
+	border-width: 10px;
+	border-color: white;
+	border-radius: 50%;
+	padding: 50px 0 50px 0;
+	box-shadow: 0 0 15px 10px #555555;
+}
+
+.footer{
+	display: inherit;
+    grid-template-columns: inherit;
+    margin-top: 3px;
+    background-color: #1E407A;
+    grid-column: 1/7;
+}
+
+.footercontent{
+	grid-column: 2/6;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
