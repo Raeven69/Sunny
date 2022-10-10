@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: repeat(6, 1fr);
+	background-color: #1E407A
+}
+
+.header {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    background-color: #1E407A;
+    height: 150px;
+}
+
+.headerContent {
+    display: flex;
+    grid-column: 2/6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 35%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar li:not(:last-child) {
+    margin-right: 50px;
+}
