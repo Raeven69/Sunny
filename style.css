@@ -1,0 +1,84 @@
+body {
+    display: grid;
+    margin: 0px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.header {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    background-color: #1E407A;
+    height: 150px;
+}
+
+.headerContent {
+    display: flex;
+    grid-column: 2/6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 35%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.content {
+    display: inherit;
+    grid-template-columns: inherit;
+    margin-top: 3px;
+    background-color: #1E407A;
+    grid-column: 1/7;
+    height: 600px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/6;
+}
+
+.title {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.title h1 {
+    color: white;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.socks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.socksImages {
+    min-width: 550px;
+}
+
+.socksImg {
+    width: 180px;
+}
+
+.socksTitle {
+    font-size: 45px;
+    color: white;
+}
