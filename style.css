@@ -104,3 +104,14 @@ body {
     border-radius: 50px;
     color: white;
 }
+
+.socksSpeelplaats {
+    margin-top: 40px;
+}
+
+.socksSpeelplaatsImg {
+    position: absolute;
+    transform-origin: center;
+    width: 180px;
+    left: 25%
+}
