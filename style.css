@@ -112,17 +112,6 @@ body {
     color: white;
 }
 
-.socksSpeelplaats {
-    margin-top: 40px;
-}
-
-.socksSpeelplaatsImg {
-    position: absolute;
-    transform-origin: center;
-    width: 180px;
-    left: 25%
-}
-
 .subContent {
     display: inherit;
     grid-template-columns: inherit;
@@ -209,4 +198,27 @@ body {
 
 .resellerImages img:last-child {
     width: 120px;
+}
+
+.socksBestelwiel {
+    margin-top: 40px;
+}
+
+.socksBestelwielImg {
+    transform-origin: center;
+    position: absolute;
+    width: 180px;
+    left: 25%;
+    z-index: 1;
+}
+
+.buttonsBestelwiel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonsBestelwiel button {
+    background: transparent;
+    border: none;
+    color: transparent;
 }
