@@ -14,6 +14,7 @@ body {
     background-color: #1E407A;
     padding: 20px 0px 20px 0px;
     border-bottom: 3px solid white;
+    z-index: 10;
 }
 
 .headerContent {
@@ -235,6 +236,7 @@ body {
     grid-template-columns: inherit;
     background-color: #1E407A;
     grid-column: 1/7;
+    border-top: 3px solid white;
 }
 
 .footerContent {
@@ -317,27 +319,4 @@ body {
     justify-content: space-between;
     font-size: 15px;
     color: white;
-}
-
-.socksBestelwiel {
-    margin-top: 40px;
-}
-
-.socksBestelwielImg {
-    transform-origin: center;
-    position: absolute;
-    width: 180px;
-    left: 25%;
-    z-index: 1;
-}
-
-.buttonsBestelwiel {
-    display: flex;
-    justify-content: space-around;
-}
-
-.buttonsBestelwiel button {
-    background: transparent;
-    border: none;
-    color: transparent;
 }
