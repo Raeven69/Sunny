@@ -38,7 +38,13 @@ body {
     font-size: 20px;
     color: white;
 }
-.navbar li p{
+
+.navbar li a{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar li p a{
 	color: #000000;
 }
 
