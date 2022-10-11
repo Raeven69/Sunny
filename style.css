@@ -5,11 +5,15 @@ body {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
     display: inherit;
     grid-template-columns: inherit;
     grid-column: 1/7;
     background-color: #1E407A;
-    height: 150px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 3px solid white;
+    z-index: 10;
 }
 
 .headerContent {
@@ -20,7 +24,7 @@ body {
 }
 
 .logo {
-    width: 35%;
+    width: 350px;
 }
 
 .navbar {
@@ -39,9 +43,9 @@ body {
 }
 
 .content {
+    margin-top: 164px;
     display: inherit;
     grid-template-columns: inherit;
-    margin-top: 3px;
     background-color: #1E407A;
     grid-column: 1/7;
     height: 600px;
@@ -83,6 +87,10 @@ body {
     color: white;
 }
 
+.socksText {
+    min-width: 340px;
+}
+
 .socksText a {
     text-decoration: none;
     font-size: 20px;
@@ -104,13 +112,210 @@ body {
     color: white;
 }
 
-.socksSpeelplaats {
-    margin-top: 40px;
+.subContent {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    margin-bottom: 20px;
 }
 
-.socksSpeelplaatsImg {
-    position: absolute;
-    transform-origin: center;
-    width: 180px;
-    left: 25%
+.contentWrapper2 {
+    display: flex;
+    grid-column: 2/6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sneakerSock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.socksText2 {
+    max-width: 600px;
+}
+
+.socksTitle2 {
+    font-size: 45px;
+    color: #1E407A;
+}
+
+.socksPerk {
+    display: flex;
+    align-items: center;
+}
+
+.socksPerk h3 {
+    color: #1E407A;
+    font-weight: 400;
+}
+
+.socksPerk img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.separator {
+    grid-column: 1/7;
+    height: 3px;
+    background-color: #1E407A;
+}
+
+.resellers {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/6;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.resellers h3 {
+    color: #1E407A;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.resellerImages {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.resellerImages img {
+    width: 200px;
+}
+
+.resellerImages img:nth-child(2) {
+    margin-top: -15px
+}
+
+.resellerImages img:nth-child(3) {
+    margin-top: 20px
+}
+
+.resellerImages img:last-child {
+    width: 120px;
+}
+
+.sunnyInfo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    grid-column: 2/6;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoText {
+    max-width: 500px;
+}
+
+.infoText h1 {
+    font-size: 45px;
+    color: #1E407A;
+}
+
+.infoText p {
+    font-size: 20px;
+    color: #1E407A;
+}
+
+.sunnyInfo img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer {
+    display: inherit;
+    grid-template-columns: inherit;
+    background-color: #1E407A;
+    grid-column: 1/7;
+    border-top: 3px solid white;
+}
+
+.footerContent {
+    display: flex;
+    grid-column: 2/6;
+    justify-content: space-between;
+}
+
+.footerItem h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.footerItem ul {
+    color: white;
+    margin-top: 3px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.newsletterContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletterContent img {
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.socials img {
+    width: 30px;
+}
+
+.newsletterContent input {
+    outline: 0px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.newsletterContent button {
+    outline: 0px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: -5px;
+    color: white;
+    background-color: #F15B39;
+}
+
+.newsletterContent input::placeholder {
+    color: #1E407A;
+}
+
+.subFooter {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    margin-top: 3px;
+    background-color: #1E407A;
+}
+
+.subFooterContent {
+    display: flex;
+    grid-column: 3/6;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    color: white;
 }

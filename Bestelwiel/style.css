@@ -1,0 +1,65 @@
+.content {
+  height: 750px;
+}
+
+.socksBestelwiel {
+    margin-top: 40px;
+}
+
+.socksBestelwielImg {
+    transform-origin: center;
+    position: absolute;
+    width: 180px;
+    left: 25%;
+    z-index: 1;
+}
+
+.buttonsBestelwiel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 125px;
+}
+
+.buttonsBestelwiel button {
+    background: transparent;
+    border: none;
+    color: transparent;
+}
+
+.buttonsBestelwiel img {
+    width: 40px;
+}
+
+.socksParen {
+    min-width: 340px;
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+}
+
+.socksParen a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.parenButton {
+    margin-right: 20px;
+    padding: 0px 20px 0px 20px;
+    background-color: #51B2A2;
+    border: 10px solid #51B2A2;
+    border-radius: 50px;
+    color: #1E407A;
+}
+
+.socksTitle {
+    font-size: 32px;
+    color: white;
+}
+
+.socksText {
+    color: white;
+}
+
+.socksText li {
+    margin-top: 1.25em;
+}
