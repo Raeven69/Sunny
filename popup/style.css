@@ -1,8 +1,9 @@
-body {
-    display: grid;
-    margin: 0px;
-    grid-template-columns: repeat(6, 1fr);
-    font-family: "Nexa", "Comic Sans", "Segeo UI", sans-serif;
+body{
+	background-color: yellow;
+	grid-template-columns: repeat(6, 1fr);
+	display:grid;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 .header {
@@ -31,7 +32,6 @@ body {
 .navbar {
     display: flex;
     justify-content: space-evenly;
-	align-items: center;
 }
 
 .navbar li {
@@ -39,70 +39,10 @@ body {
     font-size: 20px;
     color: white;
 }
-.navbar li p{
-	color: #000000;
-}
 
 .navbar li:not(:last-child) {
     margin-right: 50px;
 }
-
-.nieuwsbrief{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	width: 150px;
-	height: 15px; 
-    background-color: #ffffff;
-	color: #000000;
-    border: 10px solid #ffffff;
-    border-radius: 50px;
-}
-
-.content {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-column: 1/7;
-	margin-top: 160px;
-}
-
-.sockinbox {
-	display: flex;
-	width: 450px;
-	grid-column-start: 2;
-	margin-left: 50px;
-}
-
-.info {
-	display: flex;
-	flex-direction: column;
-	grid-column: 3/6;
-	margin-left: 75px;
-	color: #1E407A;
-	margin-top: 10px;
-	margin-right: 115px;
-}
-
-.kopjes {
-	display: flex;
-	font-size: 28px;
-}
-
-.text {
-	display: flex;
-	flex-direction: column;
-	align-items: space-between;
-}
-
-.contact {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	margin-left: -38px;
-	margin-top: -15px;
-}
-
 .footer {
     display: inherit;
     grid-template-columns: inherit;
@@ -191,4 +131,44 @@ body {
     justify-content: space-between;
     font-size: 15px;
     color: white;
+}
+
+
+
+.popup{
+	grid-column: 3/5;
+	background-color: white;
+	height: 500px;
+	width: 800px;
+	margin-top: 200px;
+	border-radius: 50px;
+	margin-bottom: 50px;
+	align-items: center;
+	display:flex;
+	flex-direction: column;
+}
+
+
+#lijn{
+	background-color: #1E407A;
+	height: 10px;
+	width: 800px;
+
+
+}	
+
+#beer{
+	height: 220px;
+	width: 220px;
+}
+
+#t1{
+	font-size: 20px;
+
+	
+}
+
+#t2{
+	font-weight: bold;
+	font-size: 17px;
 }
