@@ -15,23 +15,34 @@ window.onload = () => {
 function selectForward()
 {
     currentSelected = (currentSelected+1)%5;
-    refreshSocks();
+    refreshSocks(-1);
 }
 
 function selectBackward()
 {
     currentSelected = currentSelected-1;
     if (currentSelected < 0) { currentSelected = 4; }
-    refreshSocks();
+    refreshSocks(1);
 }
 
-function refreshSocks()
+function refreshSocks(mod = 0)
 {
     Array.prototype.forEach.call(document.getElementsByClassName("socksBestelwielImg"), (element, index) => {
-      element.style.left = `${(index === 0 ? 37 : 45+(index-2)*5)}%`;
-      element.style.bottom = `${40+Math.abs(index-2)*2}%`;
-      element.style.width = `${180+Math.abs(index-2)*-20}px`;
-      element.style.zIndex = `${3+Math.abs(index-2)*-1}`;
-      element.src = socksImages[(index+currentSelected)%5];
+        let pos = index + mod;
+        if (pos < 0) { pos = 4; }
+        if (pos > 4) { pos = 0; }
+        if (mod != 0) { element.style.transition = "all 0.2s linear"; }
+        else { element.style.transition = "none"; }
+        element.style.left = `${45+(pos-2)*5.5}%`;
+        element.style.bottom = `${40+Math.abs(pos-2)*2}%`;
+        element.style.width = `${180+Math.abs(pos-2)*-20}px`;
+        element.style.zIndex = `${3+Math.abs(pos-2)*-1}`;
+        if (mod == 0) { element.src = socksImages[(pos+currentSelected)%5]; }
     })
+
+    if (mod != 0) {
+        window.setTimeout(function () {
+            refreshSocks();
+        }, 200);
+    }
 }
