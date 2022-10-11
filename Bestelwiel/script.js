@@ -8,6 +8,17 @@ var socksImages = [
 
 var currentSelected = 0;
 
+const FEITJES = [
+    "Sunny Socks begonnen is al grap onder een paar vrienden: “sokken met witte strepen zouden niet verkopen” maar na ruim 23 jaar verkopen we ze nog steeds",
+    "Materialen 100% natuurlijk en eerlijk zijn",
+    "Sunny Socks meer sokken verkocht heeft inmiddels dan er voeten in Nederland zijn",
+    "De uitspraak van autofabrikant Henri Ford 'De Ford Model T is in iedere mogelijke kleur leverbaar, als het maar zwart is' Sunny Socks op het idee bracht om zoveel mogelijk kleuren te leveren",
+    "Onder studenten de uitdaging is 2 verschillende kleuren Sunny Socks te dragen en kijken welke kombinatie die dag het meeste gedragen wordt",
+    "De sokken getest zijn in een wasserij en de strepen na een jaar lang iedere dag 3 keer gewassen te zijn nog steeds wit waren",
+    "Honden dol zijn op Sunny Socks (baasje is daar minder blij mee)",
+    "Een archeoloog voor de grap een paar Sunny Socks in de sarcofaag van een farao heeft gelegd bij de opgraving"
+];
+
 window.onload = () => {
     refreshSocks();
 }
@@ -45,4 +56,17 @@ function refreshSocks(mod = 0)
             refreshSocks();
         }, 200);
     }
+}
+
+function popup()
+{
+    Array.prototype.forEach.call(document.getElementsByClassName("darken"), (darken, index) => {
+        darken.style.visibility = "visible";
+        darken.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    })
+    Array.prototype.forEach.call(document.getElementsByClassName("popup"), (popup, index) => {
+        popup.style.marginTop = "100px";
+        popup.style.visibility = "visible";
+    })
+    document.getElementById("weetje").innerHTML = `${FEITJES[Math.floor(Math.random() * FEITJES.length)]}`;
 }

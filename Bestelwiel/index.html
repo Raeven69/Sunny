@@ -13,17 +13,30 @@
             <div class="headerContent">
                 <img class="logo" src="../img/logo.png" alt="Sunny Socks">
                 <ul class="navbar">
-                    <li>Home</li>
-                    <li>Webshop</li>
-                    <li>About us</li>
+                    <li><a class="home" href="../index.html">home</a></li>
+                    <li><a class="webshop" href="../webshop/index.html">webshop</a></li>
+                    <li><a class="about us" href="../about us/index.html">about us</a></li>
                     <div class="nieuwsbrief">
-					<li><p>nieuwsbrief</p></li>
-					</div>
+                        <li><p><a href="../nieuwsbrief/index.html">nieuwsbrief</a></p></li>
+					          </div>
                 </ul>
+                <div class="navDropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
+        <div class="darken"></div>
         <main class="content">
             <div class="contentWrapper">
+                <div class="popup">
+                    <img id="beer" src="../img/underConstruction.png" alt="Berend Botje">
+                    <p id="t1"> Webshop binnenkort beschikbaar. Bestel uw sokken bij een van onze resellers</p>
+                    <p id="t2"> Wist je dat: </p>
+                    <p id="weetje"></p>
+                    <div id="lijn"></div>
+                </div>
                 <div class="socksBestelwiel">
                     <img class="socksBestelwielImg" src="../img/sockYellow.png" alt="Uni Color Socks">
                     <img class="socksBestelwielImg" src="../img/sockRed.png" alt="Uni Color Socks">
@@ -36,9 +49,9 @@
                     <button class="buttonBestelwielForward" type="button" onclick="selectForward()"><img src="../img/pijlRechts.png" alt="pijl"></button>
                 </div>
                 <div class="socksParen">
-                    <a class="parenButton" href=".">2 paar</a>
-                    <a class="parenButton" href=".">6 paar</a>
-                    <a class="parenButton" href=".">20 paar</a>
+                    <a class="parenButton" href="#" onclick="popup()">2 paar</a>
+                    <a class="parenButton" href="#" onclick="popup()">6 paar</a>
+                    <a class="parenButton" href="#" onclick="popup()">20 paar</a>
                 </div>
                 <div class="socksText">
                     <h1 class="socksTitle">Over dit product</h1>
