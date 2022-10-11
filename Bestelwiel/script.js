@@ -31,7 +31,7 @@ function refreshSocks(mod = 0)
         let pos = index + mod;
         if (pos < 0) { pos = 4; }
         if (pos > 4) { pos = 0; }
-        if (mod != 0) { element.style.transition = "all 0.25s linear"; }
+        if (mod != 0) { element.style.transition = "all 0.2s linear"; }
         else { element.style.transition = "none"; }
         element.style.left = `${45+(pos-2)*5.5}%`;
         element.style.bottom = `${40+Math.abs(pos-2)*2}%`;
@@ -42,7 +42,7 @@ function refreshSocks(mod = 0)
 
     if (mod != 0) {
         window.setTimeout(function () {
-          refreshSocks();
-        }, 250);
+            refreshSocks();
+        }, 200);
     }
 }
