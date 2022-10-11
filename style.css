@@ -30,12 +30,16 @@ body {
 .navbar {
     display: flex;
     justify-content: space-evenly;
+	align-items: center;
 }
 
 .navbar li {
     list-style: none;
     font-size: 20px;
     color: white;
+}
+.navbar li p{
+	color: #000000;
 }
 
 .navbar li:not(:last-child) {
@@ -44,6 +48,19 @@ body {
 
 .navDropdown {
     display: none;
+}
+
+.nieuwsbrief{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 150px;
+	height: 15px; 
+    background-color: #ffffff;
+	color: #000000;
+    border: 10px solid #ffffff;
+    border-radius: 50px;
 }
 
 .content {
