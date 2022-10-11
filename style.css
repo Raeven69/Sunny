@@ -6,7 +6,7 @@ body {
 
 .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: inherit;
     grid-template-columns: inherit;
     grid-column: 1/7;
@@ -42,6 +42,10 @@ body {
     margin-right: 50px;
 }
 
+.navDropdown {
+    display: none;
+}
+
 .content {
     margin-top: 164px;
     display: inherit;
@@ -49,6 +53,8 @@ body {
     background-color: #1E407A;
     grid-column: 1/7;
     height: 600px;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 .contentWrapper {
@@ -116,7 +122,10 @@ body {
     display: inherit;
     grid-template-columns: inherit;
     grid-column: 1/7;
-    margin-bottom: 20px;
+    overflow-x: hidden;
+    max-width: 100vw;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .contentWrapper2 {
@@ -163,6 +172,14 @@ body {
 }
 
 .resellers {
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.resellerWrapper {
     display: flex;
     flex-direction: column;
     grid-column: 2/6;
@@ -203,6 +220,14 @@ body {
 .sunnyInfo {
     margin-top: 100px;
     margin-bottom: 100px;
+    display: inherit;
+    grid-template-columns: inherit;
+    grid-column: 1/7;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.infoWrapper {
     display: flex;
     grid-column: 2/6;
     align-items: center;
@@ -236,6 +261,8 @@ body {
     background-color: #1E407A;
     grid-column: 1/7;
     border-top: 3px solid white;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .footerContent {
@@ -318,4 +345,30 @@ body {
     justify-content: space-between;
     font-size: 15px;
     color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        display: none;
+    }
+
+    .headerContent {
+        grid-column: 1/7;
+        justify-content: space-around;
+    }
+
+    .navDropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50px;
+        height: 50px;
+    }
+
+    .navDropdown span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+    }
 }
