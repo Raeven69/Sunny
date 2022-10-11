@@ -1,8 +1,12 @@
+@font-face { font-family: "Nexa" ; src: url('Nexa-Light.otf'); } 
+@font-face { font-family: "Nexa" ; font-weight: bold; src: url('Nexa-Bold.otf');}
+
 body {
     display: grid;
     margin: 0px;
     grid-template-columns: repeat(6, 1fr);
-}
+    font-family: "Nexa";
+}   
 
 .header {
     position: fixed;
@@ -103,6 +107,10 @@ body {
 
 .socksImg {
     width: 180px;
+}
+
+.mobileSocks {
+    display: none;
 }
 
 .socksTitle {
@@ -374,6 +382,10 @@ body {
         justify-content: space-around;
     }
 
+    .logo {
+        width: 240px;
+    }
+
     .navDropdown {
         display: flex;
         flex-direction: column;
@@ -387,5 +399,44 @@ body {
         height: 5px;
         background-color: white;
         border-radius: 10px;
+    }
+
+    .content {
+        margin-top: 125px;
+    }
+
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        grid-column: 1/7;
+    }
+
+    .socksText {
+        text-align: center;
+    }
+
+    .socks {
+        flex-direction: column;
+    }
+
+    .socksImages {
+        display: none;
+    }
+
+    .orderButton {
+        margin-right: 30px;
+    }
+
+    .newsletterButton {
+        margin-left: 30px;
+    }
+
+    .mobileSocks {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .mobileSocks img {
+        width: 100px;
     }
 }
