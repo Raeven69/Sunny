@@ -1,15 +1,18 @@
 .newsLetter {
     grid-column: 3/5;
+    width: 695px;
+    margin: auto;
 }
 
 .newscontent {
-    display: inherit;
+    display: flex;
     grid-template-columns: inherit;
     margin-top: 3px;
     grid-column: 1/7;
     height: 450px;
     text-align: center;
     color: #1E407A;
+    margin-top:175px;
 }
 
 .newscontent h1 {
@@ -36,5 +39,14 @@
    vertical-align: middle;
    border: 1px solid #F15B39;
    border-radius: 0 12px 12px 0;
-   margin-left: -4px;
+   margin-left: -5px;
+}
+
+@media screen and (max-width: 576px) {
+    .newsLetter {
+        width: 100%;
+    }
+    #newsInput {
+        width: 60%;
+    }
 }
