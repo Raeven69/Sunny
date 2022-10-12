@@ -79,7 +79,6 @@ body {
     grid-template-columns: inherit;
     background-color: #1E407A;
     grid-column: 1/7;
-    height: 600px;
     overflow-x: hidden;
     max-width: 100vw;
 }
@@ -320,7 +319,7 @@ body {
     flex-direction: column;
 }
 
-.newsletterContent img {
+.footerLogo {
     width: 240px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -378,6 +377,10 @@ body {
     color: white;
 }
 
+.subFooterContent h3 {
+    font-weight: 100;
+}
+
 @media screen and (max-width: 576px) {
     .navbar {
         display: none;
@@ -401,10 +404,34 @@ body {
     }
 
     .navDropdown span {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
         width: 100%;
         height: 5px;
         background-color: white;
         border-radius: 10px;
+        transition: all linear 100ms;
+    }
+
+    .toggled span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggled span:nth-child(1) {
+        position: relative;
+        left: 7px;
+        bottom: 1px;
+        transform-origin: left center;
+        transform: rotate(45deg);
+    }
+
+    .toggled span:nth-child(3) {
+        position: relative;
+        bottom: 34px;
+        left: -7px;
+        transform-origin: right center;
+        transform: rotate(-45deg);
     }
 
     .content {
@@ -417,11 +444,21 @@ body {
         grid-column: 1/7;
     }
 
+    .title h1 {
+        font-size: 25px;
+    }
+
     .socksText {
         text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .socksText h1 {
+        font-size: 25px;
     }
 
     .socks {
+        margin-top: 10px;
         flex-direction: column;
     }
 
@@ -430,19 +467,128 @@ body {
     }
 
     .orderButton {
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     .newsletterButton {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .mobileSocks {
         display: flex;
         justify-content: space-around;
+        max-width: 500px;
     }
 
     .mobileSocks img {
+        width: 80px;
+    }
+
+    .contentWrapper2 {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .socksTitle2 {
+        font-size: 25px;
+    }
+
+    .socksPerk {
+        justify-content: center;
+    }
+
+    .sneakerSock {
+        width: 240px;
+        height: 240px;
+        border-radius: 20%;
+        margin-top: 20px;
+    }
+
+    .resellerWrapper {
+        grid-column: 1/7;
+    }
+
+    .resellerWrapper h3 {
+        margin-bottom: 10px;
+    }
+
+    .resellerImages {
+        justify-content: space-evenly;
+    }
+    
+    .resellerImages img:not(:last-child) {
         width: 100px;
+    }
+
+    .resellerImages img:last-child {
+        width: 60px;
+    }
+
+    .resellerImages img:nth-child(2) {
+        margin-top: -5px;
+    }
+
+    .resellerImages img:nth-child(3) {
+        margin-top: 15px;
+    }
+
+    .sunnyInfo {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .infoWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .infoText h1 {
+        font-size: 25px;
+    }
+
+    .infoWrapper img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20%;
+    }
+
+    .footerContent {
+        grid-column: 1/7;
+        flex-direction: column;
+    }
+
+    .footerItem {
+        display: none;
+    }
+
+    .footerLogo {
+        position: relative;
+        left: 7.5%;
+        width: 320px;
+    }
+
+    .newsletter {
+        display: none;
+    }
+
+    .socials {
+        justify-content: space-around;
+    }
+
+    .socials img {
+        width: 40px;
+    }
+
+    .subFooterContent {
+        grid-column: 1/7;
+        justify-content: center;
+    }
+
+    .subFooterContent h3:first-child {
+        display: none;
+    }
+
+    .subFooterContent h3:last-child {
+        margin: 10px 0px 10px 0px;
     }
 }
