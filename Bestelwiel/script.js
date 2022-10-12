@@ -74,6 +74,7 @@ function popup()
 function closePopup()
 {
     Array.prototype.forEach.call(document.getElementsByClassName("popup"), (popup, index) => {
+        popup.style.marginTop = "200px";
         popup.style.visibility = "hidden";
     })
     Array.prototype.forEach.call(document.getElementsByClassName("darken"), (darken, index) => {
