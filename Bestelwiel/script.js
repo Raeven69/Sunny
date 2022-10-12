@@ -65,7 +65,7 @@ function popup()
         darken.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     })
     Array.prototype.forEach.call(document.getElementsByClassName("popup"), (popup, index) => {
-        popup.style.marginTop = "100px";
+        popup.style.marginTop = "0px";
         popup.style.visibility = "visible";
     })
     document.getElementById("weetje").innerHTML = `${getWeetje()}`;

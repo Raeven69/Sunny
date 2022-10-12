@@ -17,6 +17,7 @@ button {
     visibility: hidden;
     position: absolute;
     display: flex;
+    margin-top: 200px;
     background-color: white;
     height: 550px;
     width: 800px;
