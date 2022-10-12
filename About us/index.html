@@ -3,22 +3,29 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+		<link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="style.css">
-		
         <title>Sunny Socks</title>
     </head>
 	<body>
-        <header class="header">
+         <header class="header">
             <div class="headerContent">
                 <img class="logo" src="../img/logo.png" alt="Sunny Socks">
                 <ul class="navbar">
-                    <li>Home</li>
-                    <li>Webshop</li>
-                    <li>About us</li>
+                    <li><a class="home" href="../index.html">home</a></li>
+                    <li><a class="webshop" href="../webshop/index.html">webshop</a></li>
+                    <li><a class="about us" href="about us/index.html">about us</a></li>
                     <div class="nieuwsbrief">
-					<li><p>nieuwsbrief</p></li>
+						<li>
+						<p><a href="../nieuwsbrief/index.html">nieuwsbrief</a></p>
+						</li>
 					</div>
                 </ul>
+                <div class="navDropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
 		<main class="content">
@@ -46,7 +53,7 @@
 				</div>
 			</div>
 		</main >
-		<footer class="footer">
+		 <footer class="footer">
             <div class="footerContent">
                 <div class="footerItem">
                     <h1>Informatie</h2>
@@ -78,7 +85,7 @@
                     </ul>
                 </div>
                 <div class="newsletterContent">
-                    <img src="../img/logo.png" alt="Sunny Socks">
+                    <img class="footerLogo" src="../img/logo.png" alt="Sunny Socks">
                     <div class="newsletter">
                         <input type="text" placeholder="jouw-email@voorbeeld.nl">
                         <button>Abonneer</button>
@@ -95,7 +102,7 @@
         <footer class="subFooter">
             <div class="subFooterContent">
                 <h3>Privacy Policy | Algemene voorwaarden | Disclaimer | Cookies</h3>
-                <h2>&#169 Sunny :: 1999 - 2022</h2>
+                <h3>&#169 Sunny :: 1999 - 2022</h2>
             </div>
         </footer>
 	</body>

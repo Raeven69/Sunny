@@ -68,5 +68,57 @@ function popup()
         popup.style.marginTop = "100px";
         popup.style.visibility = "visible";
     })
-    document.getElementById("weetje").innerHTML = `${FEITJES[Math.floor(Math.random() * FEITJES.length)]}`;
+    document.getElementById("weetje").innerHTML = `${getWeetje()}`;
+}
+
+function closePopup()
+{
+    Array.prototype.forEach.call(document.getElementsByClassName("popup"), (popup, index) => {
+        popup.style.marginTop = "200px";
+        popup.style.visibility = "hidden";
+    })
+    Array.prototype.forEach.call(document.getElementsByClassName("darken"), (darken, index) => {
+        darken.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        window.setTimeout(function () {
+            darken.style.visibility = "hidden";
+        }, 200);
+    })
+}
+
+function getWeetje()
+{
+    let lastWeetje = getCookie("last_weetje");
+    let weetjeIndex = Math.floor(Math.random() * FEITJES.length);
+    if (lastWeetje == "")
+    {
+      document.cookie = `last_weetje=${weetjeIndex}`
+      return FEITJES[weetjeIndex];
+    }
+    lastWeetje = parseInt(lastWeetje);
+    for (let i = 0; i < FEITJES.length; i++) {
+      weetjeIndex = Math.floor(Math.random() * FEITJES.length);
+      if (weetjeIndex != lastWeetje)
+      {
+          document.cookie = `last_weetje=${weetjeIndex}`
+          return FEITJES[weetjeIndex];
+      }
+    }
+    document.cookie = `last_weetje=${weetjeIndex}`
+    return FEITJES[weetjeIndex];
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
 }
