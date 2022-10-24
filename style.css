@@ -1,5 +1,5 @@
-@font-face { font-family: "Nexa" ; src: url('Nexa-Light.otf'); } 
-@font-face { font-family: "Nexa" ; font-weight: bold; src: url('Nexa-Bold.otf');}
+@font-face { font-family: "Nexa" ; src: url('fonts/Nexa-Light.otf'); } 
+@font-face { font-family: "Nexa" ; font-weight: bold; src: url('fonts/Nexa-Bold.otf');}
 
 body {
     display: grid;
@@ -65,14 +65,13 @@ body {
 }
 
 .nieuwsbrief{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	width: 150px;
-	height: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 15px; 
     background-color: #ffffff;
-	color: #000000;
+    color: #000000;
     border: 10px solid #ffffff;
     border-radius: 50px;
 }

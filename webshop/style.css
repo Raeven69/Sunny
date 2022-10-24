@@ -5,117 +5,116 @@
     background-color: #1E407A;
     grid-column: 1/7;
     height: 760px;
-	
 }
 
 .maincontent{
-	grid-column: 2/6;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-top: 160px;
+    grid-column: 2/6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 160px;
 }
 
 .unicolorbox{
-	display: flex;
-	justify-content: center;
-	align-items: space-evenly;
-	flex-direction: column;
-	
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-direction: column;
 }
 
 .stripesbox{
-	display: flex;
-	justify-content: center;
-	align-items: space-evenly;
-	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    flex-direction: column;
 }
 
 .unicolor{
-	display: flex;
-	justify-content: center;
-	
-	background-color: #51B2A2;
-	border: solid;
-	border-width: 10px;
-	border-color: white;
-	border-radius: 50%;
-	padding: 50px 0 50px 0;
-	box-shadow: 0 0 15px 10px #555555;
+    display: flex;
+    justify-content: center;
+    background-color: #51B2A2;
+    border: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 50%;
+    padding: 50px 0 50px 0;
+    box-shadow: 0 0 15px 10px #555555;
 }
 
 .stripes{
-	display: flex;
-	justify-content: center;
-	
-	background-color: #51B2A2;
-	border: solid;
-	border-width: 10px;
-	border-color: white;
-	border-radius: 50%;
-	padding: 50px 0 50px 0;
-	box-shadow: 0 0 15px 10px #555555;
+    display: flex;
+    justify-content: center;
+    background-color: #51B2A2;
+    border: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 50%;
+    padding: 50px 0 50px 0;
+    box-shadow: 0 0 15px 10px #555555;
 }
 
 .bestelknop{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	width: 200px;
-	height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px; 
     background-color: #51B2A2;
     border: 10px solid #51B2A2;
     border-radius: 50px;
     color: #1E407A;
-	position: relative;
-	left: 50px;
-	top: 50px;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.orderButton{
+    text-decoration: none;
 }
 
 #sockYellow{
-	width: 100px;
-	height: 205px;
-	transform: rotate(-20deg);
-	position: relative;
-	left: 60px;
-	top: 15px;
+    width: 100px;
+    height: 205px;
+    transform: rotate(-20deg);
+    position: relative;
+    left: 60px;
+    top: 15px;
 }
 
 #sockRed{
-	width: 100px;
-	height: 205px;
+    width: 100px;
+    height: 205px;
 }
 
 #sockPink{
-	width: 100px;
-	height: 205px;
-	transform: rotate(20deg);
-	position: relative;
-	right: 60px;
-	top: 15px;
+    width: 100px;
+    height: 205px;
+    transform: rotate(20deg);
+    position: relative;
+    right: 60px;
+    top: 15px;
 }
 
 #stripedSockYellow{
-	width: 100px;
-	height: 205px;
-	transform: rotate(-20deg);
-	position: relative;
-	left: 60px;
-	top: 15px;
+    width: 100px;
+    height: 205px;
+    transform: rotate(-20deg);
+    position: relative;
+    left: 60px;
+    top: 15px;
 }
 
 #stripedSockRed{
-	width: 100px;
-	height: 205px;
+    width: 100px;
+    height: 205px;
 }
 
 #stripedSockPink{
-	width: 100px;
-	height: 205px;
-	transform: rotate(20deg);
-	position: relative;
-	right: 60px;
-	top: 15px;
+    width: 100px;
+    height: 205px;
+    transform: rotate(20deg);
+    position: relative;
+    right: 60px;
+    top: 15px;
 }
 

@@ -10,30 +10,30 @@
 }
 
 .info {
-	display: flex;
-	flex-direction: column;
-	grid-column: 3/6;
-	margin-left: 75px;
-	color: #1E407A;
-	margin-top: 10px;
-	margin-right: 115px;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/6;
+    margin-left: 75px;
+    color: #1E407A;
+    margin-top: 10px;
+    margin-right: 115px;
 }
 
 .kopjes {
-	display: flex;
-	font-size: 28px;
+    display: flex;
+    font-size: 28px;
 }
 
 .text {
-	display: flex;
-	flex-direction: column;
-	align-items: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
 }
 
 .contact {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	margin-left: -38px;
-	margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: -38px;
+    margin-top: -15px;
 }
