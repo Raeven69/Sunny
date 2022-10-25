@@ -2,17 +2,19 @@
     grid-column: 3/5;
     width: 695px;
     margin: auto;
+    /* color: white; */
 }
 
-.newscontent {
+.content {
+    background-color: white;
+}
+
+.newsContent {
     display: flex;
-    grid-template-columns: inherit;
-    margin-top: 3px;
-    grid-column: 1/7;
+    grid-column: 2/6;
     height: 450px;
     text-align: center;
     color: #1E407A;
-    margin-top:175px;
 }
 
 .newscontent h1 {
@@ -45,8 +47,13 @@
 @media screen and (max-width: 576px) {
     .newsLetter {
         width: 100%;
+        margin: 25% 0 25% 0;
     }
     #newsInput {
         width: 60%;
+    }
+    .newsContent {
+        grid-column: 1/7;
+        padding: 0 25px 0 25px;
     }
 }

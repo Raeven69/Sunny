@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="../script.js"></script>
+
         <title>Sunny Socks</title>
     </head>
     <body>
@@ -12,34 +14,49 @@
             <div class="headerContent">
                 <img class="logo" src="../img/logo.png" alt="Sunny Socks">
                 <ul class="navbar">
-                    <li><a class="home" href="../index.html">home</a></li>
-                    <li><a class="webshop" href="../webshop/index.html">webshop</a></li>
-                    <li><a class="about us" href="../about us/index.html">about us</a></li>
-                    <div class="nieuwsbrief">
-						<li>
-						<p><a href="../nieuwsbrief/index.html">nieuwsbrief</a></p>
-						</li>
-					</div>
+                    <li><a class="home" href="index.html">home</a></li>
+                    <li><a class="webshop" href="webshop/index.html">webshop</a></li>
+                    <li><a class="about us" href="about us/index.html">about us</a></li>
+                    <div class="nieuwsbrief"><li><p><a href="nieuwsbrief/index.html">nieuwsbrief</a></p></li></div>
                 </ul>
+                <div class="navDropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
-        <script>
-            function myFunction() {
-              alert("Je bent aangemeld voor de nieuwsbrief!");
-            }
-            </script>
-        <main class="newscontent">
-            <div class="newsLetter">
-                <h1>Blijf op de hoogte van de laatste nieuwtjes:</h1>
-                <p>Schrijf je in voor onze nieuwsbrief</p>
-                <input type="text" placeholder="E-mailadres" id="newsInput">
-                <input type="submit" onclick="myFunction()" value="Abonneer" id="newsButton">
+
+        <main class="content">
+                <div class="contentWrapper">
+                    <ul class="headerDropdown">
+                        <li>Home</li>
+                        <li>Webshop</li>
+                        <li>About us</li>
+                        <li>Nieuwsbrief</li>
+                    </ul>
+                </div>
+            <div class="newsContent">
+                <div class="newsLetter">
+                    <h1>Blijf op de hoogte van de laatste nieuwtjes:</h1>
+                    <p>Schrijf je in voor onze nieuwsbrief</p>
+                    <input type="text" placeholder="E-mailadres" id="newsInput">
+                    <input type="submit" onclick="alert('Je bent aangemeld voor de nieuwsbrief!')" value="Abonneer" id="newsButton">
+                </div>
             </div>
         </main>
+
+
         <footer class="footer">
             <div class="footerContent">
                 <div class="footerItem">
-                    <h1>Informatie</h2>
+                    <div class="footerItemTitle">
+                        <h1>Informatie</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Veelgestelde vragen</li>
                         <li>Over ons</li>
@@ -50,7 +67,13 @@
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h1>Resellers</h2>
+                    <div class="footerItemTitle">
+                        <h1>Resellers</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Amazon</li>
                         <li>Hema</li>
@@ -59,7 +82,13 @@
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h1>Contact</h2>
+                    <div class="footerItemTitle">
+                        <h1>Contact</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Straatnaam 1</li>
                         <li>1234PV</li>
