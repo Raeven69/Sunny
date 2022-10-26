@@ -321,6 +321,11 @@ body {
     padding-left: 0px;
 }
 
+.footerItem a {
+    text-decoration: none;
+    color: white;
+}
+
 .newsletterContent {
     display: flex;
     flex-direction: column;
@@ -365,6 +370,7 @@ body {
     margin-left: -5px;
     color: white;
     background-color: #F15B39;
+    cursor: pointer;
 }
 
 .newsletterContent input::placeholder {
@@ -423,6 +429,11 @@ body {
         font-size: 20px;
         border-bottom: solid white 1px;
         background-color: #1E407A;
+    }
+
+    .headerDropdown a {
+        text-decoration: none;
+        color: white;
     }
 
     .logo {
@@ -510,12 +521,12 @@ body {
 
     .mobileSocks {
         display: flex;
-        justify-content: space-around;
-        max-width: 500px;
+        justify-content: center;
+        width: 100%;
     }
 
     .mobileSocks img {
-        width: 80px;
+        max-width: 70px;
     }
 
     .contentWrapper2 {
