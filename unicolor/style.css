@@ -15,9 +15,11 @@ button {
     display: flex;
     margin-top: 200px;
     background-color: white;
-    height: 550px;
     width: 800px;
-    left: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     border-radius: 50px;
     z-index: 9;
     align-items: center;
@@ -91,7 +93,7 @@ button {
     position: absolute;
     width: 180px;
     left: 45%;
-    top: 30%;
+    top: 25vh;
     transform-style: preserve-3d;
     transform-origin: 0 50%;
     z-index: 1;
@@ -170,7 +172,6 @@ button {
         top: 140px;
         width: 267px;
         height: auto;
-        left: auto;
         border-radius: 30px;
     }
 
