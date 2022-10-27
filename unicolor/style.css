@@ -2,10 +2,6 @@
     z-index: 10;
 }
 
-.content {
-    height: 775px;
-}
-
 button {
   background: transparent;
   border: none;
@@ -83,6 +79,10 @@ button {
     position: absolute;
 }
 
+.headerDropdown {
+  z-index: 20;
+}
+
 .socksBestelwiel {
     margin-top: 80px;
 }
@@ -90,8 +90,8 @@ button {
 .socksBestelwielImg {
     position: absolute;
     width: 180px;
-    left: 25%;
-    top: 25%;
+    left: 45%;
+    top: 30%;
     transform-style: preserve-3d;
     transform-origin: 0 50%;
     z-index: 1;
@@ -141,4 +141,86 @@ button {
 
 .socksText li {
     margin-top: 1.25em;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        z-index: 21;
+    }
+
+    .socksBestelwielImg {
+        top: 20%;
+        left: 30%;
+    }
+
+    .buttonBestelwielBackward {
+        padding-right: 200px;
+    }
+
+    .parenButton {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .socksText {
+        min-width: auto;
+    }
+
+    .popup {
+        top: 140px;
+        width: 267px;
+        height: auto;
+        left: auto;
+        border-radius: 30px;
+    }
+
+    #beer {
+        width: 170px;
+        height: 170px;
+    }
+
+    #t1 {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+
+    #t2 {
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #weetje {
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .resellerImages {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .resellerImages img:last-child {
+        width: 56px;
+    }
+
+    #lijn {
+      border: 2px solid #1E407A;
+      width: 263px;
+
+    }	
+
+    .sluitKnop {
+        position: absolute;
+        margin-left: 70%;
+        margin-top: 20px;
+    }
+
+    .sluitKnop img {
+        width: 40px;
+    }
 }

@@ -40,12 +40,14 @@ function refreshSocks(mod = 0)
 {
     Array.prototype.forEach.call(document.getElementsByClassName("socksBestelwielImg"), (element, index) => {
         let pos = index + mod;
+        let leftMargin = (navigator.userAgentData.mobile ? -15 : 0);
+        let bottomMargin = (navigator.userAgentData.mobile ? 50 : 0);
         if (pos < 0) { pos = 4; }
         if (pos > 4) { pos = 0; }
         if (mod != 0) { element.style.transition = "all 0.2s linear"; }
         else { element.style.transition = "none"; }
-        element.style.left = `${45+(pos-2)*5.5}%`;
-        element.style.bottom = `${40+Math.abs(pos-2)*2}%`;
+        element.style.left = `${leftMargin+45+(pos-2)*5.5}%`;
+        element.style.bottom = `${bottomMargin+(40+Math.abs(pos-2)*2)}%`;
         element.style.width = `${180+Math.abs(pos-2)*-20}px`;
         element.style.zIndex = `${3+Math.abs(pos-2)*-1}`;
         if (mod == 0) { element.src = socksImages[(pos+currentSelected)%5]; }
