@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="../style.css">
+		<script type="text/javascript" src="../script.js"></script>
         <title>Sunny Socks</title>
     </head>
     <body>
@@ -12,24 +13,33 @@
             <div class="headerContent">
                 <img class="logo" src="../img/logo.png" alt="Sunny Socks">
                 <ul class="navbar">
-                    <li><a class="home" href="../">home</a></li>
-                    <li><a class="webshop" href="../webshop/">webshop</a></li>
-                    <li><a class="about us" href="../about/">about us</a></li>
-						        <li><p class="nieuwsbrief"><a href="../newsletter/">nieuwsbrief</a></p></li>
+                    <li><a class="home" href=".">home</a></li>
+                    <li><a class="webshop" href="webshop">webshop</a></li>
+                    <li><a class="about us" href="about">about us</a></li>
+                    <div class="nieuwsbrief"><li><p><a href="newsletter">nieuwsbrief</a></p></li></div>
                 </ul>
+                <div class="navDropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </header>
 		<main class="main">
         <div class="maincontent">
+			 <ul class="headerDropdown">
+                    <a href="."><li>Home</li></a>
+                    <a href="webshop"><li>Webshop</li></a>
+                    <a href="about"><li>About us</li></a>
+                    <a href="newsletter"><li>Nieuwsbrief</li></a>
+            </ul>
             <div class="unicolorbox">
                 <div class="unicolor">
                     <img id="sockYellow" src="../img/sockYellow.png" alt="Yellowsock">
                     <img id="sockRed" src="../img/sockRed.png" alt="Redsock">
                     <img id="sockPink" src="../img/sockPink.png" alt="Pinksock">
                 </div>
-                <div class="bestelknop">
-                    <a class="orderButton" href="../unicolor/">Bestel nu</a>
-                </div>
+                    <a class="bestelknop" href="../unicolor/">Bestel nu</a>
             </div>
             <div class="stripesbox">
                 <div class="stripes">
@@ -37,36 +47,52 @@
                     <img id="stripedSockRed" src="../img/stripedSockRed.png" alt="stripedRedsock">
                     <img id="stripedSockPink" src="../img/stripedSockPink.png" alt="stripedPinksock">
                 </div>
-                <div class="bestelknop">
-                  <a class="orderButton" href="../striped/">Bestel nu</a>
-                </div>
-				    </div>
-			  </div>
+                  <a class="bestelknop" href="../striped/">Bestel nu</a>
+			</div>
+		</div>
 		</main>
 		<footer class="footer">
-        <div class="footerContent">
-            <div class="footerItem">
-                <h1>Informatie</h2>
-                <ul>
-                    <li>Veelgestelde vragen</li>
-                    <li>Over ons</li>
-                    <li>Vacatures</li>
-                    <li>Terms of Service</li>
-                    <li>Privacy Policy</li>
-                    <li>Recenties</li>
-                </ul>
-                </div>
+            <div class="footerContent">
                 <div class="footerItem">
-                    <h1>Resellers</h2>
+                    <div class="footerItemTitle">
+                        <h1>Informatie</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
-                        <li>Amazon</li>
-                        <li>Hema</li>
-                        <li>Wehkamp</li>
-                        <li>Bol.com</li>
+                        <li>Veelgestelde vragen</li>
+                        <li>Over ons</li>
+                        <li>Vacatures</li>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                        <li>Recenties</li>
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h1>Contact</h2>
+                    <div class="footerItemTitle">
+                        <h1>Resellers</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul>
+                        <a href="https://www.amazon.com"><li>Amazon</li></a>
+                        <a href="https://www.hema.com"><li>Hema</li></a>
+                        <a href="https://www.wehkamp.com"><li>Wehkamp</li></a>
+                        <a href="https://www.bol.com"><li>Bol.com</li></a>
+                    </ul>
+                </div>
+                <div class="footerItem">
+                    <div class="footerItemTitle">
+                        <h1>Contact</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Straatnaam 1</li>
                         <li>1234PV</li>
