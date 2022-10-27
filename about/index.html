@@ -5,28 +5,35 @@
         <meta charset="UTF-8">
 		<link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="../script.js"></script>
         <title>Sunny Socks</title>
     </head>
 	<body>
       <header class="header">
-        <div class="headerContent">
-            <img class="logo" src="../img/logo.png" alt="Sunny Socks">
-            <ul class="navbar">
-                <li><a class="home" href="../">home</a></li>
-                <li><a class="webshop" href="../webshop/">webshop</a></li>
-                <li><a class="about us" href="">about us</a></li>
-                <div class="nieuwsbrief">
-        <li>
-            <p><a href="../newsletter/">nieuwsbrief</a></p>
-        </li>
-      </div>
-            </ul>
-            <div class="navDropdown">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="headerContent">
+                <img class="logo" src="../img/logo.png" alt="Sunny Socks">
+                <ul class="navbar">
+                    <li><a class="home" href=".">home</a></li>
+                    <li><a class="webshop" href="webshop">webshop</a></li>
+                    <li><a class="about us" href="about">about us</a></li>
+                    <div class="nieuwsbrief"><li><p><a href="newsletter">nieuwsbrief</a></p></li></div>
+                </ul>
+                <div class="navDropdown">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
+        </header>
+        <main class="content">
+            <div class="contentWrapper">
+                <ul class="headerDropdown">
+                    <a href="."><li>Home</li></a>
+                    <a href="webshop"><li>Webshop</li></a>
+                    <a href="about"><li>About us</li></a>
+                    <a href="newsletter"><li>Nieuwsbrief</li></a>
+                </ul>
+			</div>
     </header>
 		<main class="content">
         <img class="sockinbox" src="../img/sockinbox.png" alt="socks in a box">
@@ -62,7 +69,13 @@
 		    <footer class="footer">
             <div class="footerContent">
                 <div class="footerItem">
-                    <h1>Informatie</h2>
+                    <div class="footerItemTitle">
+                        <h1>Informatie</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Veelgestelde vragen</li>
                         <li>Over ons</li>
@@ -73,16 +86,28 @@
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h1>Resellers</h2>
+                    <div class="footerItemTitle">
+                        <h1>Resellers</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
-                        <li>Amazon</li>
-                        <li>Hema</li>
-                        <li>Wehkamp</li>
-                        <li>Bol.com</li>
+                        <a href="https://www.amazon.com"><li>Amazon</li></a>
+                        <a href="https://www.hema.com"><li>Hema</li></a>
+                        <a href="https://www.wehkamp.com"><li>Wehkamp</li></a>
+                        <a href="https://www.bol.com"><li>Bol.com</li></a>
                     </ul>
                 </div>
                 <div class="footerItem">
-                    <h1>Contact</h2>
+                    <div class="footerItemTitle">
+                        <h1>Contact</h1>
+                        <div class="arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <ul>
                         <li>Straatnaam 1</li>
                         <li>1234PV</li>
