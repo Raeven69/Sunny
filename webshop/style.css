@@ -1,12 +1,12 @@
-.main{
+.main {
     display: inherit;
     grid-template-columns: inherit;
     background-color: #1E407A;
     grid-column: 1/7;
-    
+    height: 78vh;
 }
 
-.maincontent{
+.maincontent {
     grid-column: 2/6;
     display: flex;
     justify-content: space-around;
@@ -15,7 +15,7 @@
 	margin-bottom: 100px;
 }
 
-.unicolorbox{
+.unicolorbox {
     display: flex;
     align-items: space-evenly;
     flex-direction: column;
@@ -23,7 +23,7 @@
     height: 425px;
 }
 
-.stripesbox{
+.stripesbox {
     display: flex;
     align-items: space-evenly;
     flex-direction: column;
@@ -31,7 +31,7 @@
     height: 425px;
 }
 
-.unicolor{
+.unicolor {
     display: flex;
     justify-content: center;
     background-color: #51B2A2;
@@ -43,7 +43,7 @@
     box-shadow: 0 0 15px 10px #555555;
 }
 
-.stripes{
+.stripes {
     display: flex;
     justify-content: center;
     background-color: #51B2A2;
@@ -55,7 +55,7 @@
     box-shadow: 0 0 15px 10px #555555;
 }
 
-.bestelknop{
+.bestelknop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@
 	text-decoration: none;
 }
 
-#sockYellow{
+#sockYellow {
     width: 100px;
     height: 205px;
     transform: rotate(-20deg);
@@ -80,12 +80,12 @@
     top: 15px;
 }
 
-#sockRed{
+#sockRed {
     width: 100px;
     height: 205px;
 }
 
-#sockPink{
+#sockPink {
     width: 100px;
     height: 205px;
     transform: rotate(20deg);
@@ -94,7 +94,7 @@
     top: 15px;
 }
 
-#stripedSockYellow{
+#stripedSockYellow {
     width: 100px;
     height: 205px;
     transform: rotate(-20deg);
@@ -103,12 +103,12 @@
     top: 15px;
 }
 
-#stripedSockRed{
+#stripedSockRed {
     width: 100px;
     height: 205px;
 }
 
-#stripedSockPink{
+#stripedSockPink {
     width: 100px;
     height: 205px;
     transform: rotate(20deg);
@@ -118,22 +118,24 @@
 }
 
 @media screen and (max-width: 576px) {
-	.main{
-		
-	}
+    .main {
+        height: auto;
+    }
+
     .maincontent {
         grid-column: 1/7;
 		flex-direction: column;
 		justify-content: center;
 		margin-top: 125px;
     }
+
     .unicolorbox {
         width: 320px;
 		margin-top: 50px;
 		margin-bottom: 50px;
     }
+
     .stripesbox {
         width: 320px;
-        /* margin: 50px 0 50px 0; */
     }
 }

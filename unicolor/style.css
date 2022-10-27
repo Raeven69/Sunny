@@ -3,9 +3,9 @@
 }
 
 button {
-  background: transparent;
-  border: none;
-  color: transparent;
+    background: transparent;
+    border: none;
+    color: transparent;
 }
 
 .popup {
@@ -24,6 +24,10 @@ button {
     z-index: 9;
     align-items: center;
     flex-direction: column;
+}
+
+.content {
+    height: 65vh;
 }
 
 #beer {
@@ -58,9 +62,8 @@ button {
 }
 
 #lijn {
-  border: 5px solid #1E407A;
-  width: 790px;
-
+    border: 5px solid #1E407A;
+    width: 790px;
 }	
 
 .sluitKnop {
@@ -73,7 +76,7 @@ button {
     visibility: hidden;
     transition: all 0.2s linear;
     width: 100%;
-    height: 775px;
+    height: 65vh;
     margin: 0;
     padding: 0;
     z-index: 8;
@@ -82,40 +85,80 @@ button {
 }
 
 .headerDropdown {
-  z-index: 20;
+    z-index: 20;
 }
 
-.socksBestelwiel {
-    margin-top: 80px;
+.carousel {
+    position: relative;
+    display: flex;
+    width: 900px;
+    height: 400px;
+    user-select: none;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
 }
 
-.socksBestelwielImg {
+.carouselImage {
     position: absolute;
-    width: 180px;
-    left: 45%;
-    top: 25vh;
-    transform-style: preserve-3d;
-    transform-origin: 0 50%;
+    transition: all 250ms;
+}
+
+.carouselImage:nth-child(2) {
+    width: 140px;
+    left: 175px;
+    top: 10px;
+    z-index: 0;
+}
+
+.carouselImage:nth-child(3) {
+    width: 160px;
+    left: 260px;
+    top: 15px;
     z-index: 1;
 }
 
-.buttonsBestelwiel {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    z-index: 8;
+.carouselImage:nth-child(4) {
+    width: 180px;
+    left: 360px;
+    top: 20px;
+    z-index: 2;
 }
 
-.buttonsBestelwiel img {
-    width: 40px;
+.carouselImage:nth-child(5) {
+    width: 160px;
+    left: 480px;
+    top: 15px;
+    z-index: 1;
+}
+
+.carouselImage:nth-child(6) {
+    width: 140px;
+    left: 585px;
+    top: 10px;
+    z-index: 0;
+}
+
+.carouselScroll {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.leftScroll {
+    background-image: url("../img/pijlLinks.png");
+}
+
+.rightScroll {
+    background-image: url("../img/pijlRechts.png");
 }
 
 .socksParen {
     min-width: 340px;
     display: flex;
     justify-content: center;
-    margin-top: 175px;
 }
 
 .socksParen a {
@@ -150,18 +193,57 @@ button {
         z-index: 21;
     }
 
-    .socksBestelwielImg {
-        top: 20%;
-        left: 30%;
+    .content {
+        height: auto;
     }
 
-    .buttonBestelwielBackward {
-        padding-right: 200px;
+    .carousel {
+        width: 300px;
+        height: 140px;
+    }
+
+    .carouselImage:nth-child(2) {
+        width: 45px;
+        left: 60px;
+        top: 6px;
+    }
+
+    .carouselImage:nth-child(3) {
+        width: 52.5px;
+        left: 87.5px;
+        top: 7.5px;
+    }
+
+    .carouselImage:nth-child(4) {
+        width: 60px;
+        left: 120px;
+        top: 10px;
+    }
+
+    .carouselImage:nth-child(5) {
+        width: 52.5px;
+        left: 160px;
+        top: 7.5px;
+    }
+
+    .carouselImage:nth-child(6) {
+        width: 45px;
+        left: 195px;
+        top: 6px;
+    }
+
+    .carouselScroll {
+        width: 25px;
+        height: 25px;
     }
 
     .parenButton {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .socksParen a {
+        font-size: 12.5px;
     }
     
     .socksText {
@@ -223,5 +305,9 @@ button {
 
     .sluitKnop img {
         width: 40px;
+    }
+
+    .darken {
+        height: 78vh;
     }
 }

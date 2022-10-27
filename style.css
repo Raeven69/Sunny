@@ -218,6 +218,7 @@ body {
     grid-column: 2/6;
     margin-top: 20px;
     align-items: center;
+    text-align: center;
 }
 
 .resellers h3 {

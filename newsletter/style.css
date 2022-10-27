@@ -2,7 +2,6 @@
     grid-column: 3/5;
     width: 695px;
     margin: auto;
-    /* color: white; */
 }
 
 .content {
@@ -26,24 +25,35 @@
     font-size: 22px;
 }
 
-
 #newsInput {
-   border:solid 1px #D5D8DE;
-   width: 380px;
-   line-height: 20px;
-   padding: 15px;
-   vertical-align: middle;
-   border-radius: 12px 0 0 12px;
+    border:solid 1px #D5D8DE;
+    max-width: 160px;
+    line-height: 20px;
+    padding: 15px;
+    vertical-align: middle;
+    border-radius: 12px 0 0 12px;
 }
 
 #newsButton {
-   padding: 17px;
-   color: white;
-   background: #F15B39;
-   vertical-align: middle;
-   border: 1px solid #F15B39;
-   border-radius: 0 12px 12px 0;
-   margin-left: -5px;
+    padding: 17px;
+    color: white;
+    background: #F15B39;
+    vertical-align: middle;
+    border: 1px solid #F15B39;
+    border-radius: 0 12px 12px 0;
+    margin-left: -5px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 59px;
+}
+
+.subFooter {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 @media screen and (max-width: 576px) {
@@ -51,11 +61,25 @@
         width: 100%;
         margin: 25% 0 25% 0;
     }
+
     #newsInput {
         width: 60%;
     }
+
     .newsContent {
         grid-column: 1/7;
         padding: 0 25px 0 25px;
+    }
+
+    .footer {
+        position: static;
+        width: auto;
+        bottom: auto;
+    }
+    
+    .subFooter {
+        position: static;
+        width: auto;
+        bottom: auto;
     }
 }
