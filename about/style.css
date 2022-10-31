@@ -55,18 +55,6 @@
 	display: none;
 }
 
-.footer {
-    position: absolute;
-    width: 100%;
-    bottom: 59px;
-}
-
-.subFooter {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
-
 @media screen and (max-width: 576px) {
     .info {
         grid-column: 1/6;
@@ -88,9 +76,9 @@
 		margin-left: -25px;
     }
 
-	.content {
-		margin-top: 125px;
-	}
+    .contentWrapper {
+        margin-top: 48px;
+    }
 	
 	#pckopje {
 		display: none;

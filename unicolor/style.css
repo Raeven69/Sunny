@@ -26,10 +26,6 @@ button {
     flex-direction: column;
 }
 
-.content {
-    height: 65vh;
-}
-
 #beer {
     height: 220px;
     width: 220px;
