@@ -134,10 +134,6 @@ function updateSocks(values) {
 
 // Open the under construction popup
 function popup() {
-    Array.prototype.forEach.call(document.getElementsByClassName("darken"), (darken) => {
-        darken.style.visibility = "visible";
-        darken.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    });
     Array.prototype.forEach.call(document.getElementsByClassName("popup"), (popup) => {
         popup.style.marginTop = "0px";
         popup.style.visibility = "visible";
